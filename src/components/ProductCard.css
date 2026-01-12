@@ -1,0 +1,131 @@
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-container {
+    height: 200px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-content {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 2.8em;
+    color: #1e293b;
+}
+
+.product-price {
+    font-weight: 700;
+    color: #3b82f6;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.inventory-controls-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.stock-status {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.stock-status .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #64748b;
+    font-weight: 700;
+}
+
+.stock-status .value {
+    font-weight: 700;
+    color: #334155;
+}
+
+.stock-status .value.draft {
+    color: #d97706;
+}
+
+.stock-status .original {
+    font-size: 0.7rem;
+    color: #94a3b8;
+    text-decoration: line-through;
+}
+
+.buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.buttons button {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background: white;
+    color: #475569;
+}
+
+.buttons button:hover:not(:disabled) {
+    background: #eff6ff;
+    color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.draft-alert {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    color: #d97706;
+    font-weight: 500;
+}

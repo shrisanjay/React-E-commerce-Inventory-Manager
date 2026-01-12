@@ -1,0 +1,12 @@
+.layout-root {
+    display: flex;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.layout-content {
+    flex: 1;
+    margin-left: 260px;
+    padding: 2rem;
+    max-width: 1400px;
+}
