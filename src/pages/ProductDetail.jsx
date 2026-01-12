@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Star, AlertTriangle } from 'lucide-react';
 import useProductIngestion from '../hooks/useProductIngestion';
 import { useInventory } from '../context/InventoryContext';
+import SEO from '../components/SEO';
 import './ProductDetail.css';
 
 const ProductDetail = () => {
@@ -27,6 +28,11 @@ const ProductDetail = () => {
 
   return (
     <div className="detail-page">
+      <SEO 
+        title={product.title} 
+        description={product.description.slice(0, 160)} 
+        type="product"
+      />
       <button onClick={() => navigate(-1)} className="back-link">
         <ArrowLeft size={18} /> Back to List
       </button>

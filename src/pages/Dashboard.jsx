@@ -1,6 +1,7 @@
 import React from 'react';
 import useProductIngestion from '../hooks/useProductIngestion';
 import ProductCard from '../components/ProductCard';
+import SEO from '../components/SEO';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -26,6 +27,10 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-page">
+      <SEO 
+        title="Dashboard" 
+        description="Overview of all active inventory in your e-commerce store." 
+      />
       <header className="page-header">
         <div>
           <h2 className="page-title">Dashboard</h2>
